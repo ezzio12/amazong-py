@@ -3,6 +3,7 @@
 from sharkpy.core import Shark
 import pandas as pd
 import os
+import numpy as np
 
 # Step 0: Load data
 data = pd.read_csv("data/Default.csv")
@@ -65,4 +66,5 @@ print("\n" + "="*60)
 print("📊 CLASSIFICATION PLOTS")
 print("="*60)
 shark.plot(None, None, kind="confusion_matrix")
+
 shark.plot(None, None, kind="roc")
